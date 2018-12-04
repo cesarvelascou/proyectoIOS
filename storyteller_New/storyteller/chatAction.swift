@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class chatActionViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,19 +15,39 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         messageTableView.delegate = self
         messageTableView.dataSource = self
-        
         messageTableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "messageID")
-        configureTableView()
     }//viewDidLoad
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    
+    var messageArray : [Message] = [Message]()
     @IBOutlet var messageTableView: UITableView!
     @IBOutlet var messageField: UITextField!
-    @IBOutlet var sendButton: UIButton!
+
+    @IBAction func sendPressed(_ sender: UIButton) {
+        let messagesDB = Database.database().reference().child("actionMessages")
+        let messageDictionary = ["Sender": Auth.auth().currentUser?.email, "Message": messageField.text!]
+       //Crea una llave única para los mensajes y le asignamos el diccionario
+        messagesDB.childByAutoId().setValue(messageDictionary) {
+            (error, reference) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Message saved.")
+                self.messageField.text = ""
+            }
+        }
+    }//sendPressed
+    
+    func retrieveMessages() {
+        //Se observan los mensajes
+        let messageDB = Database.database().reference().child("actionMessages")
+        messageDB.observe(.childAdded) { (snapshot) in
+            let snapshotValue = snapshot.value as! Dictionary<String,String>//Esto para que se tomen los dos parámetros tanto de usuario como de mensaje.
+        }
+    }//retrieveMessages
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
@@ -38,10 +59,4 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.message.text = messageArray[indexPath.row]
         return cell
     }//cellForRowAt
-
-    func configureTableView () {
-        messageTableView.rowHeight = UITableView.automaticDimension
-        messageTableView.estimatedRowHeight = 120.0
-    }//configureTableView
-    
 }//general
