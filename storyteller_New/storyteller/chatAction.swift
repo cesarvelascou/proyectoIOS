@@ -16,6 +16,7 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
         messageTableView.delegate = self
         messageTableView.dataSource = self
         messageTableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "messageID")
+        retrieveMessages()
     }//viewDidLoad
     
     override func didReceiveMemoryWarning() {
@@ -46,17 +47,28 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
         let messageDB = Database.database().reference().child("actionMessages")
         messageDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String,String>//Esto para que se tomen los dos parámetros tanto de usuario como de mensaje.
+            let text = snapshotValue["Message"]!
+            let sender = snapshotValue["Sender"]!
+            print(text, sender)
+            let message = Message()
+            message.message = text
+            message.user = sender
+            
+            self.messageArray.append(message)
+            self.messageTableView.reloadData()
         }
     }//retrieveMessages
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return messageArray.count
     }//numberOfRowsInSection
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageID", for: indexPath) as! NewTableViewCell
-        let messageArray = ["mmmmm", "sssssssssssssssss ssss sssss ssssss sss", "aaaaaaaa"]
-        cell.message.text = messageArray[indexPath.row]
+        cell.message.text = messageArray[indexPath.row].message
+        cell.username.text = messageArray[indexPath.row].user
+        /*let messageArray = ["mmmmm", "sssssssssssssssss ssss sssss ssssss sss", "aaaaaaaa"]
+        cell.message.text = messageArray[indexPath.row]*/
         return cell
     }//cellForRowAt
 }//general
