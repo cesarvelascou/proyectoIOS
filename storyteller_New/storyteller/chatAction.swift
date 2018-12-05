@@ -13,6 +13,7 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Action"
         messageTableView.delegate = self
         messageTableView.dataSource = self
         messageTableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "messageID")
@@ -43,7 +44,6 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
     }//sendPressed
     
     func retrieveMessages() {
-        //Se observan los mensajes
         let messageDB = Database.database().reference().child("actionMessages")
         messageDB.observe(.childAdded) { (snapshot) in
             let snapshotValue = snapshot.value as! Dictionary<String,String>//Esto para que se tomen los dos parámetros tanto de usuario como de mensaje.
@@ -67,8 +67,6 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageID", for: indexPath) as! NewTableViewCell
         cell.message.text = messageArray[indexPath.row].message
         cell.username.text = messageArray[indexPath.row].user
-        /*let messageArray = ["mmmmm", "sssssssssssssssss ssss sssss ssssss sss", "aaaaaaaa"]
-        cell.message.text = messageArray[indexPath.row]*/
         return cell
     }//cellForRowAt
 }//general

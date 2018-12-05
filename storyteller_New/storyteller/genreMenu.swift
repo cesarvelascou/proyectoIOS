@@ -13,6 +13,7 @@ class genreMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Menu"
     }
     
     override func didReceiveMemoryWarning() {
