@@ -19,6 +19,7 @@
 		A47E2A1C21A39EBB00FECFF4 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E2A1B21A39EBB00FECFF4 /* LogIn.swift */; };
 		A47E2A1E21A3A00200FECFF4 /* chatAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E2A1D21A3A00200FECFF4 /* chatAction.swift */; };
 		A47E2A2021A3A25800FECFF4 /* genreMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E2A1F21A3A25800FECFF4 /* genreMenu.swift */; };
+		A4858F2521B8BEC400B13035 /* chatFantasy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4858F2421B8BEC400B13035 /* chatFantasy.swift */; };
 		A48CD1AA21B8BB4B002DAA19 /* chatCrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */; };
 		A4ACC5FF21B0C24D00BD5546 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */; };
 		A4ACC60021B0C24D00BD5546 /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */; };
@@ -41,6 +42,7 @@
 		A47E2A1B21A39EBB00FECFF4 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		A47E2A1D21A3A00200FECFF4 /* chatAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatAction.swift; sourceTree = "<group>"; };
 		A47E2A1F21A3A25800FECFF4 /* genreMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genreMenu.swift; sourceTree = "<group>"; };
+		A4858F2421B8BEC400B13035 /* chatFantasy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatFantasy.swift; sourceTree = "<group>"; };
 		A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatCrime.swift; sourceTree = "<group>"; };
 		A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				A47E2A1F21A3A25800FECFF4 /* genreMenu.swift */,
 				A47E2A1D21A3A00200FECFF4 /* chatAction.swift */,
 				A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */,
+				A4858F2421B8BEC400B13035 /* chatFantasy.swift */,
 				A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */,
 				A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */,
 				A43A2CB721B0FFD200BF90B9 /* Message.swift */,
@@ -245,6 +248,7 @@
 				A47E2A1A21A39EAD00FECFF4 /* Register.swift in Sources */,
 				A47E2A0A21A3978800FECFF4 /* ViewController.swift in Sources */,
 				A47E2A1E21A3A00200FECFF4 /* chatAction.swift in Sources */,
+				A4858F2521B8BEC400B13035 /* chatFantasy.swift in Sources */,
 				A4ACC5FF21B0C24D00BD5546 /* NewTableViewCell.swift in Sources */,
 				A43A2CB821B0FFD200BF90B9 /* Message.swift in Sources */,
 				A48CD1AA21B8BB4B002DAA19 /* chatCrime.swift in Sources */,
