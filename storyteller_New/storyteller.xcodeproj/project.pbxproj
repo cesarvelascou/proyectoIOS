@@ -10,6 +10,7 @@
 		62B32B1FC3841A7C00874B6B /* Pods_storyteller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABC37A34C5CF3E2BA7A595D /* Pods_storyteller.framework */; };
 		A416EA2D21B0661000579B18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A416EA2C21B0661000579B18 /* GoogleService-Info.plist */; };
 		A43A2CB821B0FFD200BF90B9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43A2CB721B0FFD200BF90B9 /* Message.swift */; };
+		A45B8B9821B8C4AA009C741E /* chatWhatever.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45B8B9721B8C4AA009C741E /* chatWhatever.swift */; };
 		A47110EE21B8C1000093871D /* chatComedy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47110ED21B8C1000093871D /* chatComedy.swift */; };
 		A47E2A0821A3978800FECFF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E2A0721A3978800FECFF4 /* AppDelegate.swift */; };
 		A47E2A0A21A3978800FECFF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47E2A0921A3978800FECFF4 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		A48CD1AA21B8BB4B002DAA19 /* chatCrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */; };
 		A4ACC5FF21B0C24D00BD5546 /* NewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */; };
 		A4ACC60021B0C24D00BD5546 /* NewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */; };
+		A4EA3B0F21B8C33400FDF2A5 /* chatHorror.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EA3B0E21B8C33400FDF2A5 /* chatHorror.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		8EF0A038FD45E815736C0C80 /* Pods-storyteller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storyteller.release.xcconfig"; path = "Pods/Target Support Files/Pods-storyteller/Pods-storyteller.release.xcconfig"; sourceTree = "<group>"; };
 		A416EA2C21B0661000579B18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A43A2CB721B0FFD200BF90B9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		A45B8B9721B8C4AA009C741E /* chatWhatever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatWhatever.swift; sourceTree = "<group>"; };
 		A47110ED21B8C1000093871D /* chatComedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatComedy.swift; sourceTree = "<group>"; };
 		A47E2A0421A3978800FECFF4 /* storyteller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyteller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A47E2A0721A3978800FECFF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +51,7 @@
 		A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatCrime.swift; sourceTree = "<group>"; };
 		A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTableViewCell.swift; sourceTree = "<group>"; };
 		A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTableViewCell.xib; sourceTree = "<group>"; };
+		A4EA3B0E21B8C33400FDF2A5 /* chatHorror.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatHorror.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */,
 				A4858F2421B8BEC400B13035 /* chatFantasy.swift */,
 				A47110ED21B8C1000093871D /* chatComedy.swift */,
+				A4EA3B0E21B8C33400FDF2A5 /* chatHorror.swift */,
+				A45B8B9721B8C4AA009C741E /* chatWhatever.swift */,
 				A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */,
 				A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */,
 				A43A2CB721B0FFD200BF90B9 /* Message.swift */,
@@ -252,12 +258,14 @@
 				A47E2A1A21A39EAD00FECFF4 /* Register.swift in Sources */,
 				A47E2A0A21A3978800FECFF4 /* ViewController.swift in Sources */,
 				A47E2A1E21A3A00200FECFF4 /* chatAction.swift in Sources */,
+				A45B8B9821B8C4AA009C741E /* chatWhatever.swift in Sources */,
 				A4858F2521B8BEC400B13035 /* chatFantasy.swift in Sources */,
 				A4ACC5FF21B0C24D00BD5546 /* NewTableViewCell.swift in Sources */,
 				A43A2CB821B0FFD200BF90B9 /* Message.swift in Sources */,
 				A48CD1AA21B8BB4B002DAA19 /* chatCrime.swift in Sources */,
 				A47E2A0821A3978800FECFF4 /* AppDelegate.swift in Sources */,
 				A47E2A1C21A39EBB00FECFF4 /* LogIn.swift in Sources */,
+				A4EA3B0F21B8C33400FDF2A5 /* chatHorror.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
