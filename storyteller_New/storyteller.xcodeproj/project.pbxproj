@@ -107,10 +107,10 @@
 				A47E2A1B21A39EBB00FECFF4 /* LogIn.swift */,
 				A47E2A1F21A3A25800FECFF4 /* genreMenu.swift */,
 				A47E2A1D21A3A00200FECFF4 /* chatAction.swift */,
+				A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */,
 				A4ACC5FD21B0C24D00BD5546 /* NewTableViewCell.swift */,
 				A4ACC5FE21B0C24D00BD5546 /* NewTableViewCell.xib */,
 				A43A2CB721B0FFD200BF90B9 /* Message.swift */,
-				A48CD1A921B8BB4B002DAA19 /* chatCrime.swift */,
 			);
 			path = storyteller;
 			sourceTree = "<group>";

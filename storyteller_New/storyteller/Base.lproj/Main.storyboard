@@ -269,11 +269,18 @@
                                 <rect key="frame" x="300" y="599" width="36" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendPressed:" destination="s1l-WK-WBL" eventType="touchUpInside" id="UrB-Hp-K1D"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0kg-1U-gbl"/>
                     </view>
+                    <connections>
+                        <outlet property="messageField" destination="l0W-hk-vfT" id="Rv0-vi-Cod"/>
+                        <outlet property="messageTableView" destination="ZUI-jR-gTw" id="tmw-Ru-s3d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OCC-tI-GBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
