@@ -13,7 +13,7 @@ class chatFantasyViewController: UIViewController, UITableViewDelegate, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Action"
+        navigationItem.title = "Fantasy"
         messageTableView.delegate = self
         messageTableView.dataSource = self
         messageTableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "messageID")

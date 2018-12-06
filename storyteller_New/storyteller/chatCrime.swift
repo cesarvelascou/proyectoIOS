@@ -13,7 +13,7 @@ class chatCrimeViewController: UIViewController, UITableViewDelegate, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Action"
+        navigationItem.title = "Crime"
         messageTableView.delegate = self
         messageTableView.dataSource = self
         messageTableView.register(UINib(nibName: "NewTableViewCell", bundle: nil), forCellReuseIdentifier: "messageID")
