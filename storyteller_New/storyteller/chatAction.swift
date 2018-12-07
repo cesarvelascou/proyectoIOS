@@ -65,8 +65,8 @@ class chatActionViewController: UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageID", for: indexPath) as! NewTableViewCell
-        cell.message.text = messageArray[indexPath.row].message
-        cell.username.text = messageArray[indexPath.row].user
+        cell.message.text = messageArray[indexPath.row].message //de la clase Message
+        cell.username.text = messageArray[indexPath.row].user //de la clase Message
         return cell
     }//cellForRowAt
 }//general
