@@ -10,6 +10,7 @@ import UIKit
 
 class NewTableViewCell: UITableViewCell {
     //https://www.youtube.com/watch?v=zAWO9rldyUE
+    //http://rigel.fca.unam.mx/~li416103555/story/index.html
     
     @IBOutlet var username: UILabel!
     @IBOutlet var message: UILabel!
